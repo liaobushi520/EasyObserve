@@ -16,9 +16,10 @@ public void observeUser(User user) {
 @Override
 protected void onCreate(Bundle savedInstanceState) {       
         EasyObserve.observe(this);
-}
-
+} 
+```
  
 理念
 google官方新出的组件框架，规定了Activity只是作为UI控制器，与业务逻辑相关的代码，应该放在ViewModel中。基于这一理念，我们可以认为Activity只需要关心他所关心的数据
 至于这些数据从何而来，Activity可以无视。EasyObserve用注解的方式，让ViewModel他可以被观察的数据，所有关心这一数据的Activity只需要添加数据接收方法就可以了。
+
